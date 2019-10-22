@@ -1,52 +1,66 @@
-<app-header></app-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-item color="success">
+      <ion-avatar>
+        <img src="../../assets/img/you.jpg" alt="">
+      </ion-avatar>
+      <ion-title>Engineer Ángel Gutiérrez Guerrero</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content fullscreen>
   <ion-card>
     <img src="../../assets/img/you.jpg" />
     <ion-card-header>
-      <ion-card-subtitle>Ingeniero de Sistemas y Computación</ion-card-subtitle>
-      <ion-card-title>Ángel Gutiérrez Guerrero</ion-card-title>
+      <ion-card-subtitle class="ion-text-center">Computer and Systems Engineer</ion-card-subtitle>
+      <ion-card-title class="ion-text-center">Ángel Gutiérrez Guerrero</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
-      Descripción del sujeto.
-    </ion-card-content>
   </ion-card>
 
   <ion-list>
-
-    <ion-item button onclick="showDetail()">
-      <ion-icon slot="start" name="md-person" style="color:blueviolet"></ion-icon>
+    <ion-item button routerLink="/about" routerDirection="root">
+      <ion-icon slot="start" name="logo-freebsd-devil" style="color:red"></ion-icon>
       <ion-label>
-        <h3>I'm</h3>
+        <h3>About Me</h3>
       </ion-label>
     </ion-item>
 
-    <ion-item button onclick="showDetail()">
-      <ion-icon slot="start" name="md-school" style="color:blue"></ion-icon>
+    <ion-item button routerLink="/work" routerDirection="root">
+      <ion-icon slot="start" name="md-briefcase"></ion-icon>
       <ion-label>
-        <h3>Studys</h3>
+        <h3>Work Experience</h3>
       </ion-label>
     </ion-item>
 
-    <ion-item button onclick="showDetail()">
-      <ion-icon slot="start" name="person"></ion-icon>
+    <ion-item button routerLink="/study" routerDirection="root">
+      <ion-icon slot="start" name="md-school"></ion-icon>
       <ion-label>
-        <h3>I'm</h3>
+        <h3>Education</h3>
       </ion-label>
     </ion-item>
 
-    <ion-item button onclick="showDetail()">
-      <ion-icon slot="start" name="person"></ion-icon>
+    <ion-item button routerLink="/skill" routerDirection="root">
+      <ion-icon slot="start" name="logo-reddit"></ion-icon>
       <ion-label>
-        <h3>I'm</h3>
+        <h3>Skills</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button routerLink="/interest" routerDirection="root">
+      <ion-icon slot="start" name="md-globe"></ion-icon>
+      <ion-label>
+        <h3>Interests</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button routerLink="/achievement" routerDirection="root">
+      <ion-icon slot="start" name="medal"></ion-icon>
+      <ion-label>
+        <h3>Achievements</h3>
       </ion-label>
     </ion-item>
 
   </ion-list>
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Footer</ion-title>
-  </ion-toolbar>
-</ion-footer>
